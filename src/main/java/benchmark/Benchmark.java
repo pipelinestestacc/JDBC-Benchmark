@@ -64,7 +64,7 @@ public class Benchmark {
             final String fileName = commandLineArgsParser.getFileNameForLogs();
             jdbcBenchmark = new JdbcBenchmark(payload, amountOfThreads, amountOfInsertions, databaseInfo, fileName);
         } catch (NumberFormatException error) {
-            System.err.println("Unable to parse entered benchmark configurations. Reason: " + error.getMessage());
+            System.err.println("Unable to parse the entered benchmark configurations. Reason: " + error.getMessage());
             System.exit(Constants.EXIT_STATUS_INVALID_ARGUMENT);
         }
 
